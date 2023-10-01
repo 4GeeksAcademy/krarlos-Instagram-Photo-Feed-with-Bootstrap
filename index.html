@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IG photo feed con BTstrap</title>
+  <script src="https://kit.fontawesome.com/90d12af69a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.instagram.com/cheffu/">
+          <i class="fa-brands fa-instagram"></i>
+          <img src="https://www.pngitem.com/pimgs/m/132-1327993_instagram-logo-word-png-transparent-png.png" alt=""
+            width="70" height="24" class="d-inline-block align-text-top">
+
+        </a>
+        <div> <!--boton del post-->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new Post
+          </button>
+          <!--modal para ventana emergente-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-2">
+
+                    <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                      placeholder="Add the caption of your post here"></textarea>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </button>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/modal para ventana emergente-->
+          <li class="nav-item dropdown btn btn-secondary">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+
+              <i class="fa-solid fa-gear"></i>
+
+
+
+            </a> <!--opciones-->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <br>
+              <li><a class="dropdown-item text-danger border-top" href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+
+
+
+
+  </div>
+
+
+
+  </nav>
+
+  <div class="">
+    <!--transicion-->
+    <nav>
+      <div class="d-flex justify-content-center">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+            type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+            role="tab" aria-controls="nav-profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+        <!--pagina izquierda-->
+        <div class="card-group">
+
+          <div class="row row-cols-3 row-cols-md-3 g-2">
+            <div class="col">
+              <div class="card mx-auto">
+                <img src="https://picsum.photos/id/1/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/20/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/30/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/40/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/50/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/60/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://picsum.photos/id/70/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/80/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 mx-auto">
+                <img src="https://picsum.photos/id/90/600/600" class="card-img-top" alt="1">
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--pagina izquierda-->
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <!--B-->
+        <div>
+
+          <div> <!--1-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">01/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">MidNight Train to Georgia</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/1/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">100 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--2-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">02/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Booksies</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/20/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">200 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--3-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">03/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Cafe Haiti</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/30/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">300 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--4-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">04/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Catsy Nose</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/40/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">400 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--5-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">05/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Freedom</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/50/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">500 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--6-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">06/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Dev gear</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/60/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">600 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--7-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">07/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Deep Breath</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/70/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">700 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--8-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">08/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Strange Pineapple</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/80/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">800 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div> <!--9-->
+            <div class="card mx-auto mb-2" style="width: 18rem;">
+              <div>
+                <p class="d-flex justify-content-end card-text p-1 mb-0">09/26</p>
+              </div>
+              <div>
+                <p class="card-text p-1">Solar Glass</p>
+              </div>
+
+
+              <img src="https://picsum.photos/id/90/600/600" class="card-img-top" alt="1">
+              <div class="card-body">
+                <h6 class="card-title fw-bold">900 likes</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/B-->
+      </div>
+
+    </div>
+    <!-- fin transicion-->
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
